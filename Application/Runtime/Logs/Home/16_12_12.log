@@ -1,0 +1,1069 @@
+[ 2016-12-12T09:03:57+08:00 ] ::1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011262s ]
+
+[ 2016-12-12T09:50:53+08:00 ] ::1 /index.php/home/empty
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-12-12T09:50:59+08:00 ] ::1 /index.php/home/_empty
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-12-12T09:51:23+08:00 ] ::1 /index.php/home/_empty
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-12-12T10:10:26+08:00 ] ::1 /index.php/home/uci/empty
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-12-12T10:34:36+08:00 ] ::1 /index.php/home/uci/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-12-12T10:34:55+08:00 ] ::1 /index.php/home/uci/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+
+[ 2016-12-12T10:35:21+08:00 ] ::1 /index.php/home/uci/login?username=123&password=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( name="123" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T10:35:35+08:00 ] ::1 /index.php/home/uci/login?username=123&password=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( name="123" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE ( phone_number="123" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `user` WHERE ( qq="123" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-12-12T10:40:04+08:00 ] ::1 /index.php/home/uci/login?username=%E4%BB%98%E7%9D%BF&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( name="付睿" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 42 行.
+
+[ 2016-12-12T10:42:24+08:00 ] ::1 /index.php/home/uci/login?username=18716341029&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="18716341029" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE ( phone_number="18716341029" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 31 行.
+
+[ 2016-12-12T10:42:28+08:00 ] ::1 /index.php/home/uci/login?username=1182590636&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="1182590636" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE ( phone_number="1182590636" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE ( qq="1182590636" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 18 行.
+
+[ 2016-12-12T11:14:09+08:00 ] ::1 /index.php/home/uci/addMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-12-12T11:14:22+08:00 ] ::1 /index.php/home/uci/addMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-12-12T11:14:39+08:00 ] ::1 /index.php/home/uci/addMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+
+[ 2016-12-12T11:15:38+08:00 ] ::1 /index.php/home/uci/addMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-12-12T11:18:57+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Undefined variable: mod D:\wamp\www\Application\Home\Controller\UciController.class.php 第 82 行.
+
+[ 2016-12-12T11:19:26+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','xxxx','123','furui')
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','xxxx','123','furui')
+
+[ 2016-12-12T11:20:13+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','18716341029','xxxx','123','furui')
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','18716341029','xxxx','123','furui')
+
+[ 2016-12-12T11:20:51+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','18716341029','xxxx','123','furui')
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','18716341029','xxxx','123','furui')
+
+[ 2016-12-12T11:20:54+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','18716341029','xxxx','123','furui')
+ERR: 1364:Field 'type_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user` (`name`,`password`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','18716341029','xxxx','123','furui')
+
+[ 2016-12-12T11:21:39+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `user` (`name`,`password`,`type_id`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('furui','e10adc3949ba59abbe56e057f20f883e','1','18716341029','xxxx','123','furui') [ RunTime:0.0649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006618s ]
+
+[ 2016-12-12T11:21:43+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2016-12-12T11:21:53+08:00 ] ::1 /index.php/home/uci/addMember?username=furui&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE ( name="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:22:30+08:00 ] ::1 /index.php/home/uci/addMember?username=%E7%8E%8B%E8%80%81%E4%BA%94&password=123456&typeid=1&phonenumber=18716341029&address=xxxx&qq=123&pinyin=furui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( name="王老五" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `user` (`name`,`password`,`type_id`,`phone_number`,`address`,`qq`,`pinyin`) VALUES ('王老五','e10adc3949ba59abbe56e057f20f883e','1','18716341029','xxxx','123','furui') [ RunTime:0.0570s ]
+
+[ 2016-12-12T11:32:53+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-12-12T11:34:19+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `name`='furui',`token`='ad96366283ff296279ff386660b2f901' WHERE `id` = 1 [ RunTime:0.0743s ]
+
+[ 2016-12-12T11:34:54+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `name`='furui',`token`='0d25728667af2d3f281c46703b9ba6b0' WHERE `id` = 1 [ RunTime:0.0732s ]
+
+[ 2016-12-12T11:35:37+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `name`='furui',`token`='2ee1205f66f870f58a64868e1f014068' WHERE `id` = 1 [ RunTime:0.2467s ]
+
+[ 2016-12-12T11:36:10+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `token`='52c406c19e1b731f0352a7869561737a' WHERE `id` = 1 [ RunTime:0.0621s ]
+
+[ 2016-12-12T11:36:21+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui" ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `token`='7fcf705a6911d65c91c7a1830564ca29' WHERE `id` = 1 [ RunTime:0.5898s ]
+
+[ 2016-12-12T11:36:33+08:00 ] ::1 /index.php/home/uci/login?username=furui&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `token`='d40f395487ea575651043bbe0ca8a924' WHERE `id` = 1 [ RunTime:0.0726s ]
+
+[ 2016-12-12T11:36:41+08:00 ] ::1 /index.php/home/uci/login?username=furui123&password=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( pinyin="furui123" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\Application\Home\Controller\UciController.class.php 第 47 行.
+SQL: UPDATE `user` SET `token`='33bf9eb4e42987d5d1e6d6fb119063c5' WHERE `id` = 2 [ RunTime:0.3284s ]
+
+[ 2016-12-12T11:46:58+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-12-12T11:47:20+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-12-12T11:47:26+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0001s ]
+
+[ 2016-12-12T11:47:41+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:47:51+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:47:56+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:49:53+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:50:01+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:50:28+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:50:57+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user_type` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:51:23+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-12-12T11:51:29+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-12-12T11:51:38+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user_type` LIMIT 10   [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:52:14+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` LIMIT 10   [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:53:01+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `user` LIMIT 10   [ RunTime:0.0003s ]
+
+[ 2016-12-12T11:53:10+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user_type` LIMIT 10   [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:53:31+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user_type` LIMIT 10   [ RunTime:0.0002s ]
+
+[ 2016-12-12T11:53:46+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `news` LIMIT 10   [ RunTime:0.0002s ]
+
+[ 2016-12-12T13:59:33+08:00 ] ::1 /index.php/home/uci/getMemberTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `user_type` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `user_type` LIMIT 10   [ RunTime:0.0002s ]
+
+[ 2016-12-12T14:20:52+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0016s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`content`,`time`,`author_id`) VALUES ('\'新闻内容\'','1231213','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`content`,`time`,`author_id`) VALUES ('\'新闻内容\'','1231213','1')
+
+[ 2016-12-12T14:21:44+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0014s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1')
+
+[ 2016-12-12T14:22:02+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0246s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:22:16+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:23:15+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0016s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:23:16+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:23:35+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:23:37+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:24:09+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:28:00+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0014s ]
+ERR: 1292:Incorrect datetime value: '1231213' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+ERR: 1292:Incorrect datetime value: '1231213' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1231213','1','1')
+
+[ 2016-12-12T14:29:38+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0014s ]
+ERR: 1292:Incorrect datetime value: '1481524178' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524178','1','1')
+ERR: 1292:Incorrect datetime value: '1481524178' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524178','1','1')
+
+[ 2016-12-12T14:30:04+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0014s ]
+ERR: 1292:Incorrect datetime value: '1481524204' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524204','1','1')
+ERR: 1292:Incorrect datetime value: '1481524204' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524204','1','1')
+
+[ 2016-12-12T14:30:35+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1292:Incorrect datetime value: '1481524235' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524235','1','1')
+ERR: 1292:Incorrect datetime value: '1481524235' for column 'time' at row 1
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524235','1','1')
+
+[ 2016-12-12T14:31:15+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0017s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524275','1','1')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524275','1','1')
+
+[ 2016-12-12T14:31:49+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`))
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524309','1','1')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`))
+ [ SQL语句 ] : INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524309','1','1')
+
+[ 2016-12-12T14:32:22+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0016s ]
+SQL: INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524342','1','1') [ RunTime:0.0613s ]
+
+[ 2016-12-12T14:32:49+08:00 ] ::1 /index.php/home/uci/sendNews?title=%27%E4%BD%A0%E5%A5%BD%27&content=%27%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9%27&time=1231213&typeid=1&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0012s ]
+SQL: INSERT INTO `news` (`title`,`content`,`time`,`type_id`,`author_id`) VALUES ('\'你好\'','\'新闻内容\'','1481524369','1','1') [ RunTime:0.0771s ]
+
+[ 2016-12-12T14:35:20+08:00 ] ::1 /index.php/home/uci/getNewsTypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `news_type` [ RunTime:0.0463s ]
+SQL: SELECT * FROM `news_type`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T14:47:24+08:00 ] ::1 /index.php/home/uci/updateUserData?id=2&username=%27%E9%A9%AC%E5%BF%97%E6%88%90%27&password=123456&phonenumber=12345678910
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( id="2" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pinyin D:\wamp\www\Application\Home\Controller\UciController.class.php 第 90 行.
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+
+[ 2016-12-12T14:47:42+08:00 ] ::1 /index.php/home/uci/updateUserData?id=2&username=%27%E9%A9%AC%E5%BF%97%E6%88%90%27&password=123456&phonenumber=12345678910&pinyin=%27mazhicheng%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( id="2" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pinyin D:\wamp\www\Application\Home\Controller\UciController.class.php 第 90 行.
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+
+[ 2016-12-12T14:47:48+08:00 ] ::1 /index.php/home/uci/updateUserData?id=2&username=%27%E9%A9%AC%E5%BF%97%E6%88%90%27&password=123456&phonenumber=12345678910&pinyin=%27mazhicheng%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE ( id="2" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pinyin D:\wamp\www\Application\Home\Controller\UciController.class.php 第 90 行.
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+
+[ 2016-12-12T14:47:50+08:00 ] ::1 /index.php/home/uci/updateUserData?id=2&username=%27%E9%A9%AC%E5%BF%97%E6%88%90%27&password=123456&phonenumber=12345678910&pinyin=%27mazhicheng%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE ( id="2" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pinyin D:\wamp\www\Application\Home\Controller\UciController.class.php 第 90 行.
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+ERR: 1048:Column 'pinyin' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`=NULL WHERE ( id="2" )
+
+[ 2016-12-12T14:48:16+08:00 ] ::1 /index.php/home/uci/updateUserData?id=2&username=%27%E9%A9%AC%E5%BF%97%E6%88%90%27&password=123456&phonenumber=12345678910&pinyin=%27mazhicheng%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE ( id="2" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`='\'mazhicheng\'' WHERE ( id="2" ) [ RunTime:0.0712s ]
+
+[ 2016-12-12T14:48:17+08:00 ] ::1 /index.php/home/uci/updateUserData?id=2&username=%27%E9%A9%AC%E5%BF%97%E6%88%90%27&password=123456&phonenumber=12345678910&pinyin=%27mazhicheng%27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE ( id="2" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `user` SET `name`='\'马志成\'',`password`='e10adc3949ba59abbe56e057f20f883e',`phone_number`='12345678910',`address`='',`qq`='',`pinyin`='\'mazhicheng\'' WHERE ( id="2" ) [ RunTime:0.0541s ]
+
+[ 2016-12-12T14:56:58+08:00 ] ::1 /index.php/home/uci/getNewsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0001s ]
+
+[ 2016-12-12T15:00:21+08:00 ] ::1 /index.php/home/uci/getNewsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`type_id`,`author_id`,`time` FROM `news`  [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:04:58+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\Application\Home\Controller\UciController.class.php 第 193 行.
+SQL: SELECT * FROM `news` WHERE ( id=id )  [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:05:11+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\Application\Home\Controller\UciController.class.php 第 193 行.
+SQL: SELECT * FROM `news` WHERE ( id=id )  [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:06:08+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `news` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0117s ]
+
+[ 2016-12-12T15:07:24+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'isDelete=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `news` WHERE ( id=3and isDelete=0 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'isDelete=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `news` WHERE ( id=3and isDelete=0 ) LIMIT 1  
+
+[ 2016-12-12T15:07:35+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'isDelete=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `news` WHERE ( id=3AND isDelete=0 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'isDelete=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `news` WHERE ( id=3AND isDelete=0 ) LIMIT 1  
+
+[ 2016-12-12T15:07:44+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `news` WHERE ( id=3 AND isDelete=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:08:27+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `news` WHERE ( id=3 AND isDelete=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:08:32+08:00 ] ::1 /index.php/home/uci/getNewsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`type_id`,`author_id`,`time` FROM `news` WHERE ( isDelete=0 )  [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:08:40+08:00 ] ::1 /index.php/home/uci/getNewsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`type_id`,`author_id`,`time` FROM `news` WHERE ( isDelete=0 )  [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:09:41+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `news` WHERE ( id=3 AND isDelete=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:09:42+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `news` WHERE ( id=3 AND isDelete=0 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-12-12T15:30:40+08:00 ] ::1 /index.php/home/uci/getNewsDetails?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `news` WHERE ( id=3 AND isDelete=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-12-12T15:31:59+08:00 ] ::1 /index.php/home/uci/updateNews?id=3&title=%E5%98%BF%E5%98%BF&type_id=1&content=hahaha&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `news` SET `title`='嘿嘿',`content`='hahaha',`time`='1481527919',`type_id`='0',`author_id`='1' WHERE ( id=3 )
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `news` SET `title`='嘿嘿',`content`='hahaha',`time`='1481527919',`type_id`='0',`author_id`='1' WHERE ( id=3 )
+
+[ 2016-12-12T15:33:07+08:00 ] ::1 /index.php/home/uci/updateNews?id=3&title=%E5%98%BF%E5%98%BF&type_id=2&content=hahaha&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `news` SET `title`='嘿嘿',`content`='hahaha',`time`='1481527987',`type_id`='0',`author_id`='1' WHERE ( id=3 )
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`uci`.`news`, CONSTRAINT `news_type` FOREIGN KEY (`type_id`) REFERENCES `news_type` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `news` SET `title`='嘿嘿',`content`='hahaha',`time`='1481527987',`type_id`='0',`author_id`='1' WHERE ( id=3 )
+
+[ 2016-12-12T15:33:34+08:00 ] ::1 /index.php/home/uci/updateNews?id=3&title=%E5%98%BF%E5%98%BF&typeid=2&content=hahaha&author_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0014s ]
+SQL: UPDATE `news` SET `title`='嘿嘿',`content`='hahaha',`time`='1481528014',`type_id`='2',`author_id`='1' WHERE ( id=3 ) [ RunTime:0.0459s ]
+
+[ 2016-12-12T15:34:22+08:00 ] ::1 /index.php/home/uci/deleteNews?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0013s ]
+SQL: UPDATE `news` SET `isDelete`='1' WHERE ( id=3 ) [ RunTime:0.0957s ]
+
+[ 2016-12-12T15:35:13+08:00 ] ::1 /index.php/home/uci/deleteNews?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0015s ]
+SQL: UPDATE `news` SET `isDelete`='1' WHERE ( id=3 ) [ RunTime:0.0640s ]
+
+[ 2016-12-12T15:44:25+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-12-12T15:45:32+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-12-12T15:48:27+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+

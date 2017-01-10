@@ -1,0 +1,279 @@
+body {
+    background-color: white;
+    /*!* chrome 2+, safari 4+; multiple color stops *!*/
+    /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.32, #F6F6F6), color-stop(0.66, #EEEEEE), color-stop(0.83, #E8E8E8));*/
+    /*!* chrome 10+, safari 5.1+ *!*/
+    /*background-image: -webkit-linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
+    /*!* firefox; multiple color stops *!*/
+    /*background-image: -moz-linear-gradient(top, #F4F4F4, #F0F0F0, #EAEAEA);*/
+    /*!* ie 6+ *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F4F4', endColorstr='#EAEAEA');*/
+    /*!* ie8 + *!*/
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F4F4', endColorstr='#EAEAEA')";*/
+    /*!* ie10 *!*/
+    /*background-image: -ms-linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
+    /*!* opera 11.1 *!*/
+    /*background-image: -o-linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
+    /*!* 标准写法 *!*/
+    /*background-image: linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*margin: 0 auto;*/
+    /*z-index: -1;*/
+}
+
+@font-face {
+    font-family: 'Conv_luchitas';
+    src: url('../fonts/luchitas.eot');
+    src: local('☺'), url('../fonts/luchitas.woff') format('woff'), url('../fonts/luchitas.ttf') format('truetype'), url('../fonts/luchitas.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Parrot Leaf';
+    src: url('../fonts/Parrot Leaf.eot');
+    src: local('☺'), url('../fonts/Parrot Leaf.woff') format('woff'), url('../fonts/Parrot Leaf.ttf') format('truetype'), url('../fonts/Parrot Leaf.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_BankGothicBT';
+    src: url('../fonts/BankGothicBT.eot');
+    src: local('☺'), url('../fonts/BankGothicBT.woff') format('woff'), url('../fonts/BankGothicBT.ttf') format('truetype'), url('../fonts/BankGothicBT.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_BankGothic RUSS Medium';
+    src: url('../fonts/BankGothic RUSS Medium.eot');
+    src: local('☺'), url('../fonts/BankGothic RUSS Medium.woff') format('woff'), url('../fonts/BankGothic RUSS Medium.ttf') format('truetype'), url('../fonts/BankGothic RUSS Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*导航栏样式*/
+.title_bar {
+    height: 70px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 60px;
+    margin-left: 328px;
+    margin-right: 334px;
+}
+
+a.title_logo_1 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    font-weight: normal;
+    color: black;
+    margin-top: 8px;
+    letter-spacing: 15px;
+    width: auto;
+    line-height: 24px;
+    font-family: 'Conv_BankGothicBT';
+    float: left;
+}
+
+.title_logo_2 {
+    display: inline-block;
+    float: right;
+}
+
+p.title_char {
+    font-family: 'Conv_luchitas', Sans-Serif;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 80px;
+    color: #808080;
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 40px;
+    margin-left: 275px;
+    margin-right: 335px;
+    padding: 0;
+    padding-left: 58px;
+    overflow: hidden;
+}
+
+a {
+    display: block;
+    width: 100px;
+    font-size: 20px;
+    color: #535353;
+    text-align: left;
+}
+
+/*一级标题：当鼠标移动到上面某一个一级标题时，*/
+/*一级标题的下划线呈红色 字呈黑色，同时出现下拉菜单，*/
+/*下拉菜单背景呈半透明白色，透明度自己调，字呈深灰色。*/
+/*其他一级标题的下划线深灰色，字呈深灰色。*/
+a:hover, a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    /*border-bottom: 1px solid #ff0f32;*/
+}
+
+.dropdown {
+    display: inline-block;
+
+}
+
+.dropdown a {
+    width: auto;
+    margin-right: 104px;
+    font-size: 19px;
+    color: #777575;
+}
+
+.dropdown a:hover {
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    color: darkgray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    /*background-color: #f1f1f1;*/
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search_input {
+    height: 20px;
+    background: url("../imges/search.png") no-repeat right;
+}
+
+/*图片统一无间距*/
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/*logo样式*/
+p.char {
+    font-family: 'Conv_Parrot Leaf', Sans-Serif;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 80px;
+    color: #808080;
+    border: 0;
+}
+
+p.name {
+    font-family: 'Conv_BankGothic RUSS Medium', Sans-Serif;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #808080;
+    margin-top: -15px;
+}
+
+.logo {
+    margin: 0 auto;
+    left: 46.5%;
+    width: 150px;
+    position: fixed;
+    bottom: 150px;
+}
+
+/*线*/
+.line {
+    background-color: #C3C3C3;
+    height: 1.5px;
+    margin-top: 5px;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+/*圆*/
+.yuan {
+    float: left;
+    margin-left: 6px;
+    margin-top: 2px;
+    padding: 0;
+    border: 0;
+}
+
+.pointer {
+    background-color: #F0F0F0;
+    display: block;
+    width: 20px;
+    height: 80px;
+    float: left;
+    position: fixed;
+    z-index: 1;
+}
+
+/*备案信息*/
+.beian_info {
+    width: auto;
+    margin-top: 100px;
+    margin-left: 335px;
+}
+
+.beian_info span {
+    float: left;
+    font-family: 微软雅黑;
+}
+
+/*公司简介*/
+.company_profile {
+    margin-top: 100px;
+    margin-left: 334px;
+    margin-right: 334px;
+}
+
+.company_profile img {
+    width: 740px;
+    height: 480px;
+    margin-right: 30px
+}
+
+.company_txt p.title {
+    font-family: SimHei;;
+    color: #010101;
+    font-size: 21px;
+    font-weight: bold
+}
+
+.company_txt p.content {
+    margin-top: -21px;
+    font-family: SimHei;
+    color: #010101;
+    line-height: 31px;
+    font-size: 21px;
+    font-weight: lighter
+}
