@@ -83,6 +83,7 @@ a.title_logo_1 {
 .title_logo_2 {
     display: inline-block;
     float: right;
+    margin-top: -20px;
 }
 
 p.title_char {
@@ -171,14 +172,6 @@ a:hover {
     background: url("../imges/search.png") no-repeat right;
 }
 
-/*图片统一无间距*/
-img {
-    border: none;
-    padding: 0;
-    margin: 0;
-    float: left;
-}
-
 /*logo样式*/
 p.char {
     font-family: 'Conv_Parrot Leaf', Sans-Serif;
@@ -242,12 +235,9 @@ p.name {
     width: auto;
     margin-top: 100px;
     margin-left: 335px;
+    float: left;
 }
 
-.beian_info span {
-    float: left;
-    font-family: 微软雅黑;
-}
 
 /*公司简介*/
 .company_profile {
@@ -259,11 +249,11 @@ p.name {
 .company_profile img {
     width: 740px;
     height: 480px;
-    margin-right: 30px
+    margin-right: 40px;
 }
 
 .company_txt p.title {
-    font-family: SimHei;;
+    font-family: SimHei;
     color: #010101;
     font-size: 21px;
     font-weight: bold
@@ -276,4 +266,64 @@ p.name {
     line-height: 31px;
     font-size: 21px;
     font-weight: lighter
+}
+
+.company_txt {
+    height: 480px;
+}
+
+/*新闻列表*/
+.news_list {
+    float: right;
+    margin-top: 0;
+}
+
+.news_list li {
+    font-size: 21px;
+    line-height: 44px;
+    color: #777575;
+    font-family: SimHei;
+}
+
+.news_list li:hover {
+    color: #010101;
+}
+
+.page_count p {
+    font-family: SimHei;
+    font-size: 19px;
+}
+
+/*团队成员*/
+.team_content h.person_title {
+    font-weight: bold;
+    font-family: SimHei;
+    font-size: 19px;
+}
+
+.team_content p.content {
+    float: left;
+    margin-top: 48px;
+    line-height: 27px;
+    font-size: 19px;
+    font-family: SimHei;
+    font-weight: lighter
+}
+
+/*图片统一无间距*/
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+/*团队中列表图片*/
+img.team_small_img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 132px;
+    height: 90px;
+    margin-right: 13px;
 }
