@@ -20,7 +20,42 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Conv_BankGothicBT';
+    src: url('../fonts/BankGothicBT.eot');
+  src: local('☺'), url('../fonts/BankGothicBT.woff') format('woff'), url('../fonts/BankGothicBT.ttf') format('truetype'), url('../fonts/BankGothicBT.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_bgothl';
+    src: url('../fonts/bgothl.eot');
+    src: local('☺'), url('../fonts/bgothl.woff') format('woff'), url('../fonts/bgothl.ttf') format('truetype'), url('../fonts/bgothl.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_bgothm';
+    src: url('../fonts/bgothm.eot');
+    src: local('☺'), url('../fonts/bgothm.woff') format('woff'), url('../fonts/bgothm.ttf') format('truetype'), url('../fonts/bgothm.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cloudheixigbkregular';
+    src: url('../fonts/cloundheixigbk-webfont.woff2') format('woff2'),
+    url('../fonts/cloundheixigbk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aaheiti-liregular';
+    src: url('../fonts/simhei-webfont.woff2') format('woff2'),
+    url('../fonts/simhei-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 @font-face {
     font-family: 'Conv_BankGothicBT';
     src: url('../fonts/BankGothicBT.eot');
@@ -113,6 +148,7 @@ a:hover {
 .dropdown a {
     font-size: 19px;
     color: #777575;
+    font-family: cloudheixigbkregular;
     text-align: left;
 }
 
@@ -134,6 +170,7 @@ a:hover {
     font-size: 15px;
     display: block;
     border-bottom: none;
+    font-family: cloudheixigbkregular;
 }
 
 .dropdown-content a:hover {
@@ -230,7 +267,7 @@ p.name {
 }
 
 .company_txt p.title {
-    font-family: SimHei;
+    font-family: aaheiti-liregular;
     color: #010101;
     font-size: 21px;
     font-weight: bold
@@ -238,11 +275,11 @@ p.name {
 
 .company_txt p.content {
     margin-top: -21px;
-    font-family: SimHei;
+    font-family: aaheiti-liregular;
     color: #010101;
     line-height: 31px;
     font-size: 21px;
-    font-weight: lighter
+    font-weight: normal;
 }
 
 .company_txt {
@@ -263,7 +300,7 @@ p.name {
     line-height: 44px;
     color: #777575;
     text-align: right;
-    font-family: SimHei;
+    font-family: aaheiti-liregular;
 }
 
 .news_list li:hover {
@@ -271,14 +308,14 @@ p.name {
 }
 
 .page_count p {
-    font-family: SimHei;
+    font-family: aaheiti-liregular;
     font-size: 19px;
 }
 
 /*团队成员*/
 .team_content h.person_title {
     font-weight: bold;
-    font-family: SimHei;
+    font-family: aaheiti-liregular;
     font-size: 19px;
 }
 
@@ -289,7 +326,7 @@ p.name {
     margin-top: 21px;
     line-height: 27px;
     font-size: 19px;
-    font-family: SimHei;
+    font-family: aaheiti-liregular;
     font-weight: lighter
 }
 
