@@ -7,6 +7,68 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../css/uci_css.css">
     <title>Home 首页_UCI STUDIO</title>
+    <style type="text/css">
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 128px;
+            margin: 0 auto;
+            float: left;
+            margin-top: 26px;
+            padding: 0;
+        }
+
+        .slider .prev, .slider .next {
+            display: block;
+            position: absolute;
+            width: 17px;
+            height: 128px;
+            text-align: center;
+            line-height: 128px;
+            cursor: pointer;
+            background-color: lightgray;
+            z-index: 2;
+        }
+
+        .slider .prev {
+            left: 0;
+        }
+
+        .slider .next {
+            right: 0;
+        }
+
+        .slider .content li {
+            float: left;
+            width: 132px;
+            height: 128px;
+            padding: 0 7px;
+        }
+
+        .slider .content li img {
+            width: 132px;
+            height: 128px;
+            float: left;
+        }
+
+        .style1 {
+            width: 723px;
+        }
+
+        .style1 .container {
+            width: 723px;
+            height: 128px;
+            overflow: hidden;
+        }
+
+        .style1 .content li {
+            float: left;
+            margin: 0;
+        }
+    </style>
+
+    <script type="text/javascript" src="../../public/script/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.slider.js"></script>
 </head>
 <body>
 <div class="title_bar">
@@ -83,38 +145,61 @@
 <!--简介内容-->
 <div class="company_profile">
     <img style="float:left; width:339px;height: 333px;margin-right: 97px" src="../../imges/img1.jpg">
-    <div class="team_content" style="float:left;width:333px;">
-        <h class="person_title" style="float:left">冉勇</h>
-        <h class="person_title" style="float:right">建筑设计师</h>
-        <p class="content">
-            &nbsp;&nbsp;现在重庆优思工程设计咨询有限公司 UCI工作室担任建筑师，从事建筑设计工作
-            <br>
-            &nbsp;&nbsp;毕业于重庆大学城市科技学院，获学士学位
-        </p>
-    </div>
-    <div style="float: left;margin-top: 19px">
-        <button style="height:90px;float: left;
-        background: url('../../imges/left_arrow.png') no-repeat right;
-        padding: 8px;
-        background-color: gainsboro;
-        "></button>
-        <div style="float:left;display: inline-block;width:auto;float: left">
-            <img src="../../imges/img1.jpg" class="team_small_img">
-            <img src="../../imges/img1.jpg" class="team_small_img">
-            <img src="../../imges/img1.jpg" class="team_small_img">
-            <img src="../../imges/img1.jpg" class="team_small_img">
-            <img src="../../imges/img1.jpg" class="team_small_img">
+    <div class="company_txt">
+        <div class="team_content" style="float:left;width:333px;">
+            <h class="person_title" style="float:left">冉勇</h>
+            <h class="person_title" style="float:right">建筑设计师</h>
+            <p class="content">
+                &nbsp;&nbsp;现在重庆优思工程设计咨询有限公司 UCI工作室担任建筑师，从事建筑设计工作
+                <br>
+                &nbsp;&nbsp;毕业于重庆大学城市科技学院，获学士学位
+            </p>
         </div>
-        <button style="height:90px;background-color: grey;margin-left:-13px;float: left;
-        background: url('../../imges/right_arrow.png') no-repeat right;padding: 8px;
-        background-color: gainsboro;"></button>
-    </div>
-</div>
+        <div class="slider style1 slider1">
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+            <div class="container">
+                <ul class="content" style="margin: 0;padding: 0;">
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
 
-<div class="beian_info">
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".slider1").slider({
+                inEndEffect: "cycle",
+                steps: 1,
+                auto: false,
+                hasTriggers: false,
+//            duration: 300,
+//            delay: 500
+            });
+        </script>
+    </div>
+
+    <div class="beian_info">
         <span style="font-family: 微软雅黑;">
             &copy;2015&nbsp;&nbsp;UCI设计&nbsp;&nbsp;京ICP备09065559号&nbsp;&nbsp;渝公网安备110108007207
         </span>
-</div>
+    </div>
 </body>
 </html>

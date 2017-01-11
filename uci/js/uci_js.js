@@ -7,7 +7,13 @@
  * Copyright (C) James Padolsey (http://james.padolsey.com)
  * Download by http://www.bvbsoft.com
  */
-
+//window.onresize=function(){
+//    var width=document.documentElement.clientWidth;
+//    var height=document.documentElement.clientHeight;
+//    var title_bar_margin_left_size= $("#title_bar").attr("margin-left");
+//    alert(title_bar_margin_left_size);
+//   // $("#title_bar").css("margin-left",);
+//}
 var grayscale = (function(){
 
     var config = {

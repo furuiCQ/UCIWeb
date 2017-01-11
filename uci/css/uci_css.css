@@ -1,26 +1,8 @@
 body {
     background-color: white;
-    /*!* chrome 2+, safari 4+; multiple color stops *!*/
-    /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.32, #F6F6F6), color-stop(0.66, #EEEEEE), color-stop(0.83, #E8E8E8));*/
-    /*!* chrome 10+, safari 5.1+ *!*/
-    /*background-image: -webkit-linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
-    /*!* firefox; multiple color stops *!*/
-    /*background-image: -moz-linear-gradient(top, #F4F4F4, #F0F0F0, #EAEAEA);*/
-    /*!* ie 6+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F4F4', endColorstr='#EAEAEA');*/
-    /*!* ie8 + *!*/
-    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F4F4', endColorstr='#EAEAEA')";*/
-    /*!* ie10 *!*/
-    /*background-image: -ms-linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
-    /*!* opera 11.1 *!*/
-    /*background-image: -o-linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
-    /*!* 标准写法 *!*/
-    /*background-image: linear-gradient(#F4F4F4, #F0F0F0, #EAEAEA);*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*margin: 0 auto;*/
-    /*z-index: -1;*/
+    min-width: 1200px;
+    min-height: 100%;
+    font-size: 130%;
 }
 
 @font-face {
@@ -60,9 +42,8 @@ body {
     height: 70px;
     margin: 0 auto;
     padding: 0;
-    margin-top: 60px;
-    margin-left: 328px;
-    margin-right: 334px;
+    margin-top: 4.6%;
+    width: 1280px;
 }
 
 a.title_logo_1 {
@@ -96,12 +77,11 @@ p.title_char {
 }
 
 ul {
+    width: 1280px;
     list-style-type: none;
+    margin: 0 auto;
     margin-top: 40px;
-    margin-left: 275px;
-    margin-right: 335px;
     padding: 0;
-    padding-left: 58px;
     overflow: hidden;
 }
 
@@ -128,14 +108,12 @@ a:hover {
 
 .dropdown {
     display: inline-block;
-
 }
 
 .dropdown a {
-    width: auto;
-    margin-right: 104px;
     font-size: 19px;
     color: #777575;
+    text-align: left;
 }
 
 .dropdown a:hover {
@@ -232,24 +210,23 @@ p.name {
 
 /*备案信息*/
 .beian_info {
-    width: auto;
-    margin-top: 100px;
-    margin-left: 335px;
-    float: left;
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5%;
 }
-
 
 /*公司简介*/
 .company_profile {
-    margin-top: 100px;
-    margin-left: 334px;
-    margin-right: 334px;
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 .company_profile img {
-    width: 740px;
-    height: 480px;
-    margin-right: 40px;
+    width: 60%;
+    max-height: 480px;
+    margin-right: 3%;
 }
 
 .company_txt p.title {
@@ -270,18 +247,22 @@ p.name {
 
 .company_txt {
     height: 480px;
+    margin: 0;
+    padding: 0;
 }
 
 /*新闻列表*/
 .news_list {
     float: right;
-    margin-top: 0;
+    margin: 0;
+    width: 30%;
 }
 
 .news_list li {
-    font-size: 21px;
+    font-size: 80%;
     line-height: 44px;
     color: #777575;
+    text-align: right;
     font-family: SimHei;
 }
 
@@ -303,7 +284,9 @@ p.name {
 
 .team_content p.content {
     float: left;
-    margin-top: 48px;
+    margin: 0;
+    padding: 0;
+    margin-top: 21px;
     line-height: 27px;
     font-size: 19px;
     font-family: SimHei;
@@ -317,6 +300,7 @@ img {
     margin: 0;
     float: left;
 }
+
 /*团队中列表图片*/
 img.team_small_img {
     border: none;
