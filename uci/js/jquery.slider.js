@@ -418,7 +418,7 @@
                 if (!$this.find("."+options.navCls).length) {   //使用children找不到
                     var list_str = "";
                     for (var i = 1; i <= _size ; i++) {
-                        list_str += "<li>" + i + "</li>";
+                        list_str += "<li>" +  "</li>";
                     }
                     $this.append("<ul class='" + options.navCls + "'>" + list_str + "</ul>");
                 }
