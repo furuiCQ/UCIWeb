@@ -5,70 +5,76 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../css/uci_css.css">
-    <title>新闻--动态</title>
+    <script type="text/javascript" src="../../js/uci_js.js"></script>
+    <title>规划</title>
     <style type="text/css">
         .slider {
             position: relative;
             overflow: hidden;
-            height: 476px;
-            margin: 0 auto;
-            float: right;
-            margin-top: 4px;
-            padding: 0;
-            padding-bottom: 30px;
-            float: left;
+            height: 330px;
+            margin: 0 auto 10px;
         }
 
-        .slider .nav {
-            position: relative;
-            width: 733px;
-            margin: 3px 0;
-            z-index: 3;
+        .slider .prev, .slider .next {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 277px;
             text-align: center;
-            margin-top: -24px;
+            line-height: 277px;
+            cursor: pointer;
         }
 
-        .slider .nav li {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 12px;
-            margin: 0 15px;
-            background: white;
+        .slider .prev {
+            left: 0;
         }
 
-        .slider .nav li.active {
-            background: black;
+        .slider .next {
+            right: 0;
         }
 
         .slider .content li {
             float: left;
-            width: 733px;
-            height: 476px;
-            padding: 0;
-            margin: 0;
+            width: 314px;
+            height: 330px;
+            padding: 10px;
         }
 
         .slider .content li img {
-            width: 733px;
-            height: 476px;
+            width: 316px;
+            height: 277px;
             float: left;
+
         }
 
+        .slider .content li img:hover {
+
+        }
+
+        .slider .content li p {
+            float: left;
+            margin-left: 18px;
+            font-size: 19px;
+            font-family: cloudheixigbkregular;
+            color: #777575;
+        }
         .style1 {
-            width: 733px;
+            width: 1255px;
         }
 
         .style1 .container {
-            width: 733px;
-            height: 476px;
+            width: 1200px;
+            height: 330px;
+            margin: 0 30px;
             overflow: hidden;
         }
 
         .style1 .content li {
             float: left;
+            margin: 0;
         }
     </style>
+
     <script type="text/javascript" src="../../public/script/jquery.min.js"></script>
     <script type="text/javascript" src="../../js/jquery.slider.js"></script>
 </head>
@@ -83,30 +89,29 @@
 
 <ul>
     <div class="dropdown">
-        <a id="profile" href="../../profile/index.html">简介</a>
+        <a id="profile" href="../profile/index.html">简介</a>
         <div class="dropdown-content">
-            <a href="../../profile/index.html">公司概述</a>
-            <a href="../../profile/team/index.html">核心团队</a>
-            <a href="../../profile/honor/index.html">公司荣誉</a>
-            <a href="../../profile/patener/index.html">合作伙伴</a>
+            <a href="../profile/index.html">公司概述</a>
+            <a href="../profile/team/index.html">核心团队</a>
+            <a href="../profile/honor/index.html">公司荣誉</a>
+            <a href="../profile/patener/index.html">合作伙伴</a>
         </div>
     </div>
     <div class="dropdown">
-        <a id="profile1" href="../../news/index.html">新闻</a>
+        <a id="profile1" href="../news/index.html">新闻</a>
     </div>
     <div class="dropdown">
-        <a id="profile2" href="../../project/index.html">项目</a>
+        <a id="profile2" href="../project/index.html">项目</a>
         <div class="dropdown-content">
-        <a href="#">建筑</a>
-        <a href="#">景观</a>
-        <a href="#">室内</a>
-        <a href="#">规划</a>
-        <a href="#">产品</a>
+            <a href="#">建筑</a>
+            <a href="#">景观</a>
+            <a href="#">室内</a>
+            <a href="#">规划</a>
+            <a href="#">产品</a>
         </div>
     </div>
     <div class="dropdown">
-        <a id="profile3" href="../../workshop/index.html" style="font-family: 'Conv_BankGothicBT';"><span
-                style="font-size: 26px">U</span>作坊</a>
+        <a id="profile3" href="../workshop/index.html" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>作坊</a>
         <!--<div class="dropdown-content">-->
         <!--<a href="#">U手作</a>-->
         <!--<a href="#">U课程</a>-->
@@ -115,8 +120,7 @@
         <!--</div>-->
     </div>
     <div class="dropdown">
-        <a id="profile4" href="../../school/index.html" style="font-family: 'Conv_BankGothicBT';"><span
-                style="font-size: 26px">U</span>学堂</a>
+        <a id="profile4" href="../school/index.html" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>学堂</a>
         <!--<div class="dropdown-content">-->
         <!--&lt;!&ndash;<a href="#">公司概述</a>&ndash;&gt;-->
         <!--&lt;!&ndash;<a href="#">核心团队</a>&ndash;&gt;-->
@@ -125,7 +129,7 @@
         <!--</div>-->
     </div>
     <div class="dropdown">
-        <a id="profile6" href="../../contact/index.html">联络</a>
+        <a id="profile6" href="../contact/index.html">联络</a>
         <div class="dropdown-content">
             <a href="#">加入我们</a>
             <a href="#">工作环境</a>
@@ -140,31 +144,35 @@
     </div>
 </ul>
 
+
 <!--简介内容-->
-<div class="company_profile">
-    <div class="slider style1 slider1">
+<div class="company_profile" style="padding-top: 20px">
+    <div class="slider style1 slider1" style="margin-left: 0px;">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
         <div class="container">
-            <ul class="content" style="margin: 0;padding: 0">
+            <ul class="content" style="margin: 0;padding: 0;margin-left: -18px">
                 <li><img src="../../imges/img1.jpg">
-                </li>
-                <li><img src="../../imges/img2.jpeg">
-                </li>
-                <li><img src="../../imges/img3.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
                 <li><img src="../../imges/img1.jpg">
-                </li>
+                    <p>中国建筑 2017</p></li>
+                <li><img src="../../imges/img1.jpg">
+                    <p>中国建筑 2017</p></li>
+                <li><img src="../../imges/img1.jpg">
+                    <p>中国建筑 2017</p></li>
+
             </ul>
         </div>
     </div>
@@ -172,28 +180,13 @@
         $(".slider1").slider({
             inEndEffect: "cycle",
             steps: 1,
-            auto: true,
-            hasTriggers: true,
-            duration: 300,
-            delay: 500
+            auto: false,
+            hasTriggers: false,
+//            duration: 300,
+//            delay: 500
         });
     </script>
-    <!--<img src="../../../imges/img1.jpg">-->
-    <div class="company_txt">
-        <ul class="news_list" style="float:left">
-            <li>1.恭贺重庆优思工程设计咨询有限公司成立</li>
-            <li>2.恭贺重庆优思工程设计咨询有限公司成立</li>
-            <li>3.恭贺重庆优思工程设计咨询有限公司成立</li>
-            <li>4.恭贺重庆优思工程设计咨询有限公司成立</li>
-            <li>5.恭贺重庆优思工程设计咨询有限公司成立</li>
-            <li>6.恭贺重庆优思工程设计咨询有限公司成立</li>
-            <div class="page_count" style="float: right;margin-top: 142px">
-                <p style="float: left;margin:0 auto;">&lt;</p>
-                <p style="float: left;margin:0 auto;">1/4</p>
-                <p style="float: left;margin:0 auto;">&gt;</p>
-            </div>
-        </ul>
-    </div>
+
 
 </div>
 

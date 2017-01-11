@@ -150,6 +150,7 @@ a:hover {
     color: #777575;
     font-family: cloudheixigbkregular;
     text-align: left;
+    font-weight: lighter;
 }
 
 .dropdown a:hover {
@@ -159,6 +160,7 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
+    z-index: 2;
 }
 
 .dropdown-content a {
@@ -347,4 +349,16 @@ img.team_small_img {
     width: 132px;
     height: 90px;
     margin-right: 13px;
+}
+/*招聘信息*/
+.join_info{
+    width: 602px;
+}
+.join_info p{
+    font-family: cloudheixigbkregular;
+    font-size: 19px;
+    line-height: 33px;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
 }
