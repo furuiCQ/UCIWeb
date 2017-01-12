@@ -266,11 +266,21 @@ p.name {
     max-height: 480px;
     margin-right: 3%;
 }
-.company_profile video{
+.company_profile .video_div{
     width: 60%;
     max-height: 480px;
+    float: left;
+    margin: 0;padding: 0;
     margin-right: 3%;
 }
+.company_profile .video_div video {
+    width: 100%;
+    height: 480px;
+    margin: 0;
+    padding: 0;
+    object-fit: fill;
+}
+
 .company_txt p.title {
     font-family: aaheiti-liregular;
     color: #010101;
