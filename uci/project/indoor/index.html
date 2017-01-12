@@ -86,64 +86,53 @@
     </div>
 </div>
 <!--导航栏-->
+<!--导航栏-->
 
 <ul>
     <div class="dropdown">
-        <a id="profile" href="../profile/index.html">简介</a>
+        <a id="profile" href="../../profile/index.html">简介</a>
         <div class="dropdown-content">
-            <a href="../profile/index.html">公司概述</a>
-            <a href="../profile/team/index.html">核心团队</a>
-            <a href="../profile/honor/index.html">公司荣誉</a>
-            <a href="../profile/patener/index.html">合作伙伴</a>
+            <a href="../../profile/index.html">公司概述</a>
+            <a href="../../profile/team/index.html">核心团队</a>
+            <a href="../../profile/honor/index.html">公司荣誉</a>
+            <a href="../../profile/patener/index.html">合作伙伴</a>
         </div>
     </div>
     <div class="dropdown">
-        <a id="profile1" href="../news/index.html">新闻</a>
+        <a id="profile1" href="../../news/index.html">新闻</a>
     </div>
     <div class="dropdown">
-        <a id="profile2" href="../project/index.html">项目</a>
+        <a id="profile2" href="../../project/index.html">项目</a>
         <div class="dropdown-content">
-            <a href="#">建筑</a>
-            <a href="#">景观</a>
-            <a href="#">室内</a>
-            <a href="#">规划</a>
-            <a href="#">产品</a>
+            <a href="../../project/index.html">建筑</a>
+            <a href="../../project/landscape/index.html">景观</a>
+            <a href="../../project/indoor/index.html">室内</a>
+            <a href="../../project/planning/index.html">规划</a>
+            <a href="../../project/product/index.html">产品</a>
         </div>
     </div>
     <div class="dropdown">
-        <a id="profile3" href="../workshop/index.html" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>作坊</a>
-        <!--<div class="dropdown-content">-->
-        <!--<a href="#">U手作</a>-->
-        <!--<a href="#">U课程</a>-->
-        <!--&lt;!&ndash;<a href="#">公司荣誉</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;<a href="#">合作伙伴</a>&ndash;&gt;-->
-        <!--</div>-->
-    </div>
-    <div class="dropdown">
-        <a id="profile4" href="../school/index.html" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>学堂</a>
-        <!--<div class="dropdown-content">-->
-        <!--&lt;!&ndash;<a href="#">公司概述</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;<a href="#">核心团队</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;<a href="#">公司荣誉</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;<a href="#">合作伙伴</a>&ndash;&gt;-->
-        <!--</div>-->
-    </div>
-    <div class="dropdown">
-        <a id="profile6" href="../contact/index.html">联络</a>
+        <a id="profile3" href="../../workshop/index.html" style="font-family: 'Conv_BankGothicBT';"><span
+                style="font-size: 26px">U</span>作坊</a>
         <div class="dropdown-content">
-            <a href="#">加入我们</a>
-            <a href="#">工作环境</a>
-            <!--<a href="#">公司概述</a>-->
-            <!--<a href="#">核心团队</a>-->
-            <!--<a href="#">公司荣誉</a>-->
-            <!--<a href="#">合作伙伴</a>-->
+            <a href="../../workshop/project/index.html">U课程</a>
+            <a href="../../workshop/index.html">U手作</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a id="profile4" href="../../school/index.html" style="font-family: 'Conv_BankGothicBT';"><span
+                style="font-size: 26px">U</span>学堂</a>
+    </div>
+    <div class="dropdown">
+        <a id="profile6" href="../../contact/index.html">联络</a>
+        <div class="dropdown-content">
+            <a href="../../contact/employment/index.html">招聘</a>
         </div>
     </div>
     <div class="dropdown" style="float: right">
         <input class="search_input" type="text" name="search">
     </div>
 </ul>
-
 
 <!--简介内容-->
 <div class="company_profile" style="padding-top: 20px">
@@ -152,39 +141,13 @@
         <span class="next">&gt;</span>
         <div class="container">
             <ul class="content" style="margin: 0;padding: 0;margin-left: -18px">
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
-                <li><img src="../../imges/img1.jpg">
-                    <p>中国建筑 2017</p></li>
+
 
             </ul>
         </div>
     </div>
     <script type="text/javascript">
-        $(".slider1").slider({
-            inEndEffect: "cycle",
-            steps: 1,
-            auto: false,
-            hasTriggers: false,
-//            duration: 300,
-//            delay: 500
-        });
+        getIndoorList();
     </script>
 
 

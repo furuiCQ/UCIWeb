@@ -59,7 +59,6 @@
             color: #777575;
         }
 
-
         .style1 {
             width: 1255px;
         }
@@ -80,24 +79,25 @@
     <script type="text/javascript" src="../public/script/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.slider.js"></script>
     <script type="text/javascript">
-
-
         // $(".item img").css({"display":"none");
 
         // On window load. This waits until images have loaded which is essential
         $(window).load(function () {
 
             // Fade in images so there isn't a color "pop" document load and then on window load
-            $(".container img").animate({ opacity: 1 }, 500);
+            $(".container img").animate({opacity: 1}, 500);
 
             // clone image
             $('.container img').each(function () {
                 var el = $(this);
-                el.css({ "position": "absolute" }).wrap("<div class='img_wrapper' style='display: inline-block'>").
-                clone().addClass('img_grayscale').css({ "position": "absolute", "z-index": "998", "opacity": "0" })
+                el.css({"position": "absolute"}).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass('img_grayscale').css({
+                            "position": "absolute",
+                            "z-index": "998",
+                            "opacity": "0"
+                        })
                         .insertBefore(el).queue(function () {
                     var el = $(this);
-                    el.parent().css({ "width": this.width, "height": this.height });
+                    el.parent().css({"width": this.width, "height": this.height});
                     el.dequeue();
                 });
                 this.src = grayscale(this.src);
@@ -105,12 +105,12 @@
 
             // Fade image
             $('.container img').mouseover(function () {
-                $(this).parent().parent().find('p').css("color","black");
-                $(this).parent().find('img:first').stop().animate({ opacity: 1 }, 1000);
+                $(this).parent().parent().find('p').css("color", "black");
+                $(this).parent().find('img:first').stop().animate({opacity: 1}, 1000);
             })
             $('.img_grayscale').mouseout(function () {
-                $(this).parent().parent().find('p:first').css("color","#777575");
-                $(this).stop().animate({ opacity: 0 }, 1000);
+                $(this).parent().parent().find('p:first').css("color", "#777575");
+                $(this).stop().animate({opacity: 0}, 1000);
             });
         });
 
@@ -164,21 +164,24 @@
     <div class="dropdown">
         <a id="profile2" href="../project/index.html">项目</a>
         <div class="dropdown-content">
-        <a href="#">建筑</a>
-        <a href="#">景观</a>
-        <a href="#">室内</a>
-        <a href="#">规划</a>
-        <a href="#">产品</a>
+            <a href="../project/index.html">建筑</a>
+            <a href="../project/landscape/index.html">景观</a>
+            <a href="../project/indoor/index.html">室内</a>
+            <a href="../project/planning/index.html">规划</a>
+            <a href="../project/product/index.html">产品</a>
         </div>
     </div>
     <div class="dropdown">
-        <a id="profile3" href="../workshop/index.html" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>作坊</a>
+        <a id="profile3" href="../workshop/index.html" style="font-family: 'Conv_BankGothicBT';"><span
+                style="font-size: 26px">U</span>作坊</a>
         <div class="dropdown-content">
-            <a href="#">U课程</a>
+            <a href="../workshop/project/index.html">U课程</a>
+            <a href="#">U手作</a>
         </div>
     </div>
     <div class="dropdown">
-        <a id="profile4" href="../school/index.html" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>学堂</a>
+        <a id="profile4" href="../school/index.html" style="font-family: 'Conv_BankGothicBT';"><span
+                style="font-size: 26px">U</span>学堂</a>
         <!--<div class="dropdown-content">-->
         <!--&lt;!&ndash;<a href="#">公司概述</a>&ndash;&gt;-->
         <!--&lt;!&ndash;<a href="#">核心团队</a>&ndash;&gt;-->
@@ -189,12 +192,8 @@
     <div class="dropdown">
         <a id="profile6" href="../contact/index.html">联络</a>
         <div class="dropdown-content">
-            <a href="#">加入我们</a>
-            <a href="#">工作环境</a>
-            <!--<a href="#">公司概述</a>-->
-            <!--<a href="#">核心团队</a>-->
-            <!--<a href="#">公司荣誉</a>-->
-            <!--<a href="#">合作伙伴</a>-->
+            <a href="../contact/employment/index.html">招聘</a>
+
         </div>
     </div>
     <div class="dropdown" style="float: right">

@@ -1,19 +1,91 @@
 /**
  * Created by admin on 2016/12/20.
  */
-
+/**
+ * 项目首页获取数据
+ */
+function getProjectMainList(){
+    for(i=0;i<10;i++){
+        $(".content").append("<li onclick=javascript:window.location.href='details.html?id="+i+"'>" +
+            "<img src='../imges/img1.jpg'><p>中国建筑 "+i+"2017</p></li>");
+    }
+    $(".slider1").slider({
+        inEndEffect: "cycle",
+        steps: 1,
+        auto: false,
+        hasTriggers: false,
+    });
+}
+function getLandScapeList(){
+    for(i=0;i<10;i++){
+        $(".content").append("<li onclick=javascript:window.location.href='details.html?id="+i+"'>" +
+            "<img src='../../imges/img1.jpg'><p>中国景观 "+i+"2017</p></li>");
+    }
+    $(".slider1").slider({
+        inEndEffect: "cycle",
+        steps: 1,
+        auto: false,
+        hasTriggers: false,
+    });
+}
+function getIndoorList(){
+    for(i=0;i<10;i++){
+        $(".content").append("<li onclick=javascript:window.location.href='details.html?id="+i+"'>" +
+            "<img src='../../imges/img1.jpg'><p>中国室内 "+i+"2017</p></li>");
+    }
+    $(".slider1").slider({
+        inEndEffect: "cycle",
+        steps: 1,
+        auto: false,
+        hasTriggers: false,
+    });
+}
+function getPalnningList(){
+    for(i=0;i<10;i++){
+        $(".content").append("<li onclick=javascript:window.location.href='details.html?id="+i+"'>" +
+            "<img src='../../imges/img1.jpg'><p>中国规划 "+i+"2017</p></li>");
+    }
+    $(".slider1").slider({
+        inEndEffect: "cycle",
+        steps: 1,
+        auto: false,
+        hasTriggers: false,
+    });
+}
+function getProductList(){
+    for(i=0;i<10;i++){
+        $(".content").append("<li onclick=javascript:window.location.href='details.html?id="+i+"'>" +
+            "<img src='../../imges/img1.jpg'><p>中国产品"+i+"2017</p></li>");
+    }
+    $(".slider1").slider({
+        inEndEffect: "cycle",
+        steps: 1,
+        auto: false,
+        hasTriggers: false,
+    });
+}
+function getWorkShopProjectList(){
+    for(i=0;i<10;i++){
+        if(i%2==0){
+            $(".content").append("<li onclick=javascript:window.location.href='details.html?id="+i+"'>" +
+                "<img src='../../imges/img1.jpg'><p>中国作坊产品"+i+"2017</p></li>");
+        }else{
+            $(".content").append("<li onclick=javascript:window.location.href='details_movie.html?id="+i+"'>" +
+                "<img src='../../imges/img1.jpg'><p>中国作坊产品"+i+"2017</p></li>");
+        }
+    }
+    $(".slider1").slider({
+        inEndEffect: "cycle",
+        steps: 1,
+        auto: false,
+        hasTriggers: false,
+    });
+}
 /*
  * -- grayscale.js --
  * Copyright (C) James Padolsey (http://james.padolsey.com)
  * Download by http://www.bvbsoft.com
  */
-//window.onresize=function(){
-//    var width=document.documentElement.clientWidth;
-//    var height=document.documentElement.clientHeight;
-//    var title_bar_margin_left_size= $("#title_bar").attr("margin-left");
-//    alert(title_bar_margin_left_size);
-//   // $("#title_bar").css("margin-left",);
-//}
 var grayscale = (function(){
 
     var config = {
@@ -318,3 +390,5 @@ var grayscale = (function(){
     return init;
 
 })();
+
+
