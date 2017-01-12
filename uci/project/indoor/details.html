@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>室内详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/uci_css.css">
+    <style type="text/css">
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 131px;
+            margin: 0 auto;
+            float: right;
+            margin-top: 4px;
+            padding: 0;
+        }
+
+        .slider .prev, .slider .next {
+            display: block;
+            position: absolute;
+            width: 17px;
+            height: 131px;
+            text-align: center;
+            line-height: 131px;
+            cursor: pointer;
+            background-color: white;
+            opacity: 0.5;
+            z-index: 2;
+        }
+
+        .slider .prev {
+            left: 0;
+        }
+
+        .slider .next {
+            right: 0;
+        }
+
+        .slider .content li {
+            float: left;
+            width: 137px;
+            height: 131px;
+            padding: 0 12px;
+        }
+
+        .slider .content li img {
+            width: 137px;
+            height: 131px;
+            float: left;
+
+        }
+
+        .style1 {
+            width: 455px;
+        }
+
+        .style1 .container {
+            width: 455px;
+            height: 131px;
+            overflow: hidden;
+        }
+
+        .style1 .content li {
+            float: left;
+            margin: 0;
+        }
+    </style>
+
+    <script type="text/javascript" src="../../public/script/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.slider.js"></script>
+</head>
+<body>
+<div class="title_bar">
+    <a class="title_logo_1">UCI STUDIO</a>
+    <div class="title_logo_2">
+        <p class="title_char"><span style='color:#CD3A4C;'>U</span>CI</p>
+    </div>
+</div>
+<!--导航栏-->
+<ul>
+    <div class="dropdown">
+        <a id="profile" href="../profile/index.html">简介</a>
+        <div class="dropdown-content">
+            <a href="../profile/index.html">公司概述</a>
+            <a href="../profile/team/index.html">核心团队</a>
+            <a href="#">公司荣誉</a>
+            <a href="#">合作伙伴</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a id="profile1" href="../news/index.html">新闻</a>
+        <div class="dropdown-content">
+            <!--<a href="#">公司概述</a>-->
+            <!--<a href="#">核心团队</a>-->
+            <!--<a href="#">公司荣誉</a>-->
+            <!--<a href="#">合作伙伴</a>-->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a id="profile2" href="../home/index.html">项目</a>
+        <div class="dropdown-content">
+            <a href="../home/index.html">规划</a>
+            <a href="#">建筑</a>
+            <a href="#">景观</a>
+            <a href="#">室内</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a id="profile3" href="#index" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>作坊</a>
+        <div class="dropdown-content">
+            <a href="#">U手作</a>
+            <a href="#">U课程</a>
+            <!--<a href="#">公司荣誉</a>-->
+            <!--<a href="#">合作伙伴</a>-->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a id="profile4" href="#index" style="font-family: 'Conv_BankGothicBT';"><span style="font-size: 26px">U</span>学堂</a>
+        <div class="dropdown-content">
+            <!--<a href="#">公司概述</a>-->
+            <!--<a href="#">核心团队</a>-->
+            <!--<a href="#">公司荣誉</a>-->
+            <!--<a href="#">合作伙伴</a>-->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a id="profile6" href="#index">联络</a>
+        <div class="dropdown-content">
+            <a href="#">加入我们</a>
+            <a href="#">工作环境</a>
+            <!--<a href="#">公司概述</a>-->
+            <!--<a href="#">核心团队</a>-->
+            <!--<a href="#">公司荣誉</a>-->
+            <!--<a href="#">合作伙伴</a>-->
+        </div>
+    </div>
+    <div class="dropdown" style="float: right">
+        <input class="search_input" type="text" name="search">
+    </div>
+</ul>
+<div style="width: 1280px;margin: 0 auto;margin-top: 34px">
+    <img style="float:right;" src="../../imges/menu.png">
+</div>
+<!--简介内容-->
+<div class="company_profile">
+    <img src="../../imges/img1.jpg">
+    <div class="company_txt">
+        <ul style="list-style-type: none;width: 35%;margin: 0;padding: 0">
+            <p style="width:160px;  background: url('../../imges/right_arrow.png') no-repeat right;font-weight: bold;margin: 0;padding: 0;">
+                赤水仁岸府</p>
+            <p>时间 2016</p>
+            <p>规模 40000</p>
+            <p>连接速度不v垃圾吧v倒垃圾代表v垃圾的身边v了解到几点思采血女就把考浪费v内测版</p>
+        </ul>
+        <div class="page_count" style="float: right;margin-top: 117px">
+            <p style="float: left;margin:0 auto;">&lt;</p>
+            <p style="float: left;margin:0 auto;">1/4</p>
+            <p style="float: left;margin:0 auto;">&gt;</p>
+        </div>
+        <div class="slider style1 slider1">
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+            <div class="container">
+                <ul class="content" style="margin: 0;padding: 0;margin-left: -18px">
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+                    <li><img src="../../imges/img1.jpg">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".slider1").slider({
+                inEndEffect: "cycle",
+                steps: 1,
+                auto: false,
+                hasTriggers: false,
+//            duration: 300,
+//            delay: 500
+            });
+        </script>
+
+    </div>
+
+
+</div>
+
+<div class="beian_info">
+        <span style="font-family: 微软雅黑; font-weight: lighter;color: #777575;font-size: 19px">
+            &copy;2015&nbsp;&nbsp;UCI设计&nbsp;&nbsp;京ICP备09065559号&nbsp;&nbsp;渝公网安备110108007207
+        </span>
+</div>
+</body>
+</html>
