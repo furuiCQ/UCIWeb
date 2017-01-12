@@ -2,7 +2,6 @@ body {
     background-color: white;
     min-width: 1200px;
     min-height: 100%;
-    font-size: 130%;
 }
 
 @font-face {
@@ -20,15 +19,13 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Conv_BankGothicBT';
     src: url('../fonts/BankGothicBT.eot');
-    src: local('☺'), url('../fonts/BankGothicBT.woff') format('woff'), url('../fonts/BankGothicBT.ttf') format('truetype'), url('../fonts/BankGothicBT.svg') format('svg');
+  src: local('☺'), url('../fonts/BankGothicBT.woff') format('woff'), url('../fonts/BankGothicBT.ttf') format('truetype'), url('../fonts/BankGothicBT.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Conv_bgothl';
     src: url('../fonts/bgothl.eot');
@@ -36,7 +33,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Conv_bgothm';
     src: url('../fonts/bgothm.eot');
@@ -44,7 +40,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'cloudheixigbkregular';
     src: url('../fonts/cloundheixigbk-webfont.woff2') format('woff2'),
@@ -52,7 +47,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'aaheiti-liregular';
     src: url('../fonts/simhei-webfont.woff2') format('woff2'),
@@ -61,7 +55,6 @@ body {
     font-style: normal;
 
 }
-
 @font-face {
     font-family: 'Conv_BankGothicBT';
     src: url('../fonts/BankGothicBT.eot');
@@ -273,21 +266,11 @@ p.name {
     max-height: 480px;
     margin-right: 3%;
 }
-.company_profile .video_div{
+.company_profile video{
     width: 60%;
     max-height: 480px;
-    float: left;
-    margin: 0;padding: 0;
     margin-right: 3%;
 }
-.company_profile .video_div video {
-    width: 100%;
-    height: 480px;
-    margin: 0;
-    padding: 0;
-    object-fit: fill;
-}
-
 .company_txt p.title {
     font-family: aaheiti-liregular;
     color: #010101;
@@ -370,13 +353,11 @@ img.team_small_img {
     height: 90px;
     margin-right: 13px;
 }
-
 /*招聘信息*/
-.join_info {
+.join_info{
     width: 602px;
 }
-
-.join_info p {
+.join_info p{
     font-family: cloudheixigbkregular;
     font-size: 19px;
     line-height: 33px;
